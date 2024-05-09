@@ -1,0 +1,7 @@
+class Solution:
+    def sumOfEncryptedInt(self, nums: List[int]) -> int:
+        output = 0
+        for num in nums:
+            num = str(num)
+            output += int(max(num) * len(num))
+        return output
