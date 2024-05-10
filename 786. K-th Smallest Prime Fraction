@@ -1,0 +1,20 @@
+from fractions import Fraction
+
+arr = [1, 2, 3, 5]
+k = 3
+res = []
+
+for i in range(len(arr)):
+    for j in range(i+1, len(arr)):
+        a = Fraction(arr[i], arr[j]).limit_denominator()
+        res.append(a)
+
+so = sorted(res)
+
+if k <= len(so):
+    a=so[k-1]
+    b=a.numerator
+    c=a.denominator
+    d=[b,c]
+    
+print(d)
