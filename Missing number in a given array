@@ -1,0 +1,20 @@
+a=[3,0,1,2,5]
+#print missing value
+for i in range(len(a)+1):
+    if i not in a:
+        print(i)
+#or
+a=[3,0,1,2,5]
+b=0
+for i in range(len(a)+1):
+    b+=i
+print(b-sum(a))
+#or
+a=[3,0,1,2,5]
+b=[]
+for i in range(len(a)+1):
+    if i not in a:
+        b.append(i)
+
+for i in b:
+    print(i)
